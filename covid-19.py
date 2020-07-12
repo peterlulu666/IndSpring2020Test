@@ -117,6 +117,7 @@ def covid_dict(csv_file):
                         countries_dict[data[1]] = countries_dict[data[1]] + int(data[date])
         print(countries_dict)
         # I googled how to sort dictionary by value
+        # python dictionary sort value
         # https://stackoverflow.com/questions/613183/how-do-i-sort-a-dictionary-by-value
         countries_dict_sort = {key: value for key, value in
                                sorted(countries_dict.items(), reverse=True, key=lambda item: item[1])}
